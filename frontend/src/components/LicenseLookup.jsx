@@ -105,7 +105,7 @@ function LicenseLookup() {
     setResult(null);
     setError('');
   };
-// console log the result if it is not null
+
 console.log(result);
   if (result && !result.notFound) {
     const isActive = result.is_active;
