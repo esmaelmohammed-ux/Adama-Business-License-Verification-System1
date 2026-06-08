@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
-
+// AppShell component for the main layout
 function AppShell({ children }) {
   const { user, logout, isAdmin } = useAuth();
   const { lang, setLang, t, systemNameShort } = useLanguage();
