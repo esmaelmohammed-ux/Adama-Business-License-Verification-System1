@@ -16,7 +16,7 @@ const emptyForm = {
   payment_status: 'Paid',
   balance_due: 0,
 };
-//AdminPanel component for the admin panel
+
 function AdminPanel() {
   const { t } = useLanguage();
   const [businesses, setBusinesses] = useState([]);
