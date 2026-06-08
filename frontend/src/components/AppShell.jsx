@@ -12,7 +12,7 @@ function AppShell({ children }) {
   if (isLogin) {
     return children;
   }
-//console log the user
+
   return (
     <div className="app-shell">
       <nav className="top-nav">
