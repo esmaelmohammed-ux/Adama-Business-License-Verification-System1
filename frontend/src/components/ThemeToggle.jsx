@@ -1,6 +1,6 @@
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
-//ThemeToggle component for the theme toggle  add commit and push
+
 function ThemeToggle({ className = '' }) {
   const { isDark, toggleTheme } = useTheme();
   const { t } = useLanguage();
