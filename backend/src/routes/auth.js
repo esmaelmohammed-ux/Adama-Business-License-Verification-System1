@@ -1,12 +1,22 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const rateLimit = require('express-rate-limit');
 const pool = require('../db/connection');
+const config = require('../config');
 const { requireAuth } = require('../middleware/auth');
 
 const router = express.Router();
 
-router.post('/login', async (req, res, next) => {
+const loginLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: config.isProd ? 10 : 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Too many login attempts, please try again later' },
+});
+
+router.post('/login', loginLimiter, async (req, res, next) => {
   try {
     const { username, password } = req.body;
 
@@ -32,7 +42,7 @@ router.post('/login', async (req, res, next) => {
 
     const token = jwt.sign(
       { id: user.id, username: user.username, role: user.role, full_name: user.full_name },
-      process.env.JWT_SECRET || 'ketelelema-dev-secret',
+      config.jwtSecret,
       { expiresIn: '8h' }
     );
 

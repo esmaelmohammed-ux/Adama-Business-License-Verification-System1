@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const config = require('../config');
 
 function requireAuth(req, res, next) {
   const header = req.headers.authorization;
@@ -10,7 +11,7 @@ function requireAuth(req, res, next) {
   const token = header.slice(7);
 
   try {
-    const payload = jwt.verify(token, process.env.JWT_SECRET || 'ketelelema-dev-secret');
+    const payload = jwt.verify(token, config.jwtSecret);
     req.user = payload;
     next();
   } catch {

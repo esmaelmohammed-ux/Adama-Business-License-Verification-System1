@@ -1,0 +1,8 @@
+.env
+.env.local
+CREDENTIALS.txt
+backend/.env
+backend/public/*
+!backend/public/.gitkeep
+node_modules/
+frontend/dist/

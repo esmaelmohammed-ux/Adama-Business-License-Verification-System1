@@ -1,13 +1,14 @@
 const mysql = require('mysql2/promise');
+const config = require('../config');
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  port: Number(process.env.DB_PORT) || 3306,
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'ketelelema_audit',
+  host: config.db.host,
+  port: config.db.port,
+  user: config.db.user,
+  password: config.db.password,
+  database: config.db.database,
   waitForConnections: true,
-  connectionLimit: 10,
+  connectionLimit: config.isProd ? 20 : 10,
 });
 
 module.exports = pool;

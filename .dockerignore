@@ -1,0 +1,11 @@
+node_modules
+**/node_modules
+.git
+**/.git
+backend/.env
+frontend/dist
+backend/public
+*.md
+.env
+.env.*
+!.env.example
