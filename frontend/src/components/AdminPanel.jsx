@@ -7,7 +7,7 @@ import {
   updateBusiness,
 } from '../api/adminApi';
 import { useLanguage } from '../context/LanguageContext';
-// empty form for the admin panelss
+
 const emptyForm = {
   license_number: '',
   owner_name: '',
