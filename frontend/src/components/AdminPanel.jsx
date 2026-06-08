@@ -7,7 +7,7 @@ import {
   updateBusiness,
 } from '../api/adminApi';
 import { useLanguage } from '../context/LanguageContext';
-// empty form for the admin panel
+
 const emptyForm = {
   license_number: '',
   owner_name: '',
@@ -16,7 +16,7 @@ const emptyForm = {
   payment_status: 'Paid',
   balance_due: 0,
 };
-
+s
 function AdminPanel() {
   const { t } = useLanguage();
   const [businesses, setBusinesses] = useState([]);
