@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { fetchBusiness } from '../api/businessApi';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
-
+//  comment
 const showDemo = import.meta.env.VITE_SHOW_DEMO !== 'false';
 
 function formatBalance(amount) {
@@ -106,7 +106,7 @@ function LicenseLookup() {
     setError('');
   };
 
-console.log(result);
+  console.log(result);
   if (result && !result.notFound) {
     const isActive = result.is_active;
 
@@ -244,29 +244,29 @@ console.log(result);
       </form>
 
       {showDemo && (
-      <section className="demo-section">
-        <p className="demo-section-title">{t('demoLicenses')}</p>
-        <div className="demo-chips">
-          <button
-            type="button"
-            className="demo-chip demo-chip-paid"
-            onClick={() => handleDemoClick('ADM-2024-0001')}
-            disabled={loading}
-          >
-            <span className="chip-dot" />
-            <code>ADM-2024-0001</code>
-          </button>
-          <button
-            type="button"
-            className="demo-chip demo-chip-expired"
-            onClick={() => handleDemoClick('ADM-2024-0002')}
-            disabled={loading}
-          >
-            <span className="chip-dot" />
-            <code>ADM-2024-0002</code>
-          </button>
-        </div>
-      </section>
+        <section className="demo-section">
+          <p className="demo-section-title">{t('demoLicenses')}</p>
+          <div className="demo-chips">
+            <button
+              type="button"
+              className="demo-chip demo-chip-paid"
+              onClick={() => handleDemoClick('ADM-2024-0001')}
+              disabled={loading}
+            >
+              <span className="chip-dot" />
+              <code>ADM-2024-0001</code>
+            </button>
+            <button
+              type="button"
+              className="demo-chip demo-chip-expired"
+              onClick={() => handleDemoClick('ADM-2024-0002')}
+              disabled={loading}
+            >
+              <span className="chip-dot" />
+              <code>ADM-2024-0002</code>
+            </button>
+          </div>
+        </section>
       )}
     </div>
   );
