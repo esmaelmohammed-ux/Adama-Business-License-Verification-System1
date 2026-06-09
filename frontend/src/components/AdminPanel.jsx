@@ -7,7 +7,6 @@ import {
   updateBusiness,
 } from '../api/adminApi';
 import { useLanguage } from '../context/LanguageContext';
-//importing the empty form
 const emptyForm = {
   license_number: '',
   owner_name: '',
