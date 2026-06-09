@@ -3,7 +3,6 @@ import { Navigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
-// comment
 const DEMO_ACCOUNTS = [
   { role: 'inspector', username: 'inspector', password: 'inspector123' },
   { role: 'admin', username: 'admin', password: 'admin123' },
