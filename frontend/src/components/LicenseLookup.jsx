@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { fetchBusiness } from '../api/businessApi';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
-
+//LicenseLookup component for the license lookup pagess
 const showDemo = import.meta.env.VITE_SHOW_DEMO !== 'false';
 
 function formatBalance(amount) {
