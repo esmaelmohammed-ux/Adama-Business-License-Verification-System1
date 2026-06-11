@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 
 const showDemo = import.meta.env.VITE_SHOW_DEMO !== 'false';
-// comment
+
 function formatBalance(amount) {
   return new Intl.NumberFormat('en-ET', {
     style: 'currency',
