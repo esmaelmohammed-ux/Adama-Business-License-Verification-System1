@@ -7,7 +7,7 @@ function requireEnv(name) {
   }
   return value.trim();
 }
-
+// comment
 function loadConfig() {
   let jwtSecret;
 
