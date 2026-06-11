@@ -10,7 +10,7 @@ const pool = require('./db/connection');
 const authRoutes = require('./routes/auth');
 const businessRoutes = require('./routes/business');
 const adminRoutes = require('./routes/admin');
-// comment
+
 const app = express();
 
 if (config.isProd) {
@@ -84,3 +84,5 @@ app.use((err, _req, res, _next) => {
 app.listen(config.port, () => {
   console.log(`Adama Business License Verification running on port ${config.port} (${config.isProd ? 'production' : 'development'})`);
 });
+
+
