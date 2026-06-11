@@ -10,7 +10,7 @@ require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
 
 const bcrypt = require('bcryptjs');
 const mysql = require('mysql2/promise');
-
+// comment
 function parseArgs(argv) {
   const args = {};
   for (let i = 0; i < argv.length; i += 1) {
