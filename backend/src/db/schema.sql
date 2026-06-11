@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS ketelelema_audit;
 USE ketelelema_audit;
-
+// comment
 CREATE TABLE IF NOT EXISTS businesses (
   id INT AUTO_INCREMENT PRIMARY KEY,
   license_number VARCHAR(50) NOT NULL UNIQUE,
