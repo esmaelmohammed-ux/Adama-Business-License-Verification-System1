@@ -10,7 +10,7 @@ const pool = require('./db/connection');
 const authRoutes = require('./routes/auth');
 const businessRoutes = require('./routes/business');
 const adminRoutes = require('./routes/admin');
-
+// comment
 const app = express();
 
 if (config.isProd) {
