@@ -1,5 +1,5 @@
 USE ketelelema_audit;
-
+// comment
 INSERT INTO businesses (license_number, owner_name, sub_city, expiry_date, payment_status, balance_due) VALUES
   ('ADM-2024-0001', 'Abebe Traders', 'Bole Ketelelema', '2026-12-31', 'Paid', 0.00),
   ('ADM-2024-0002', 'Hanna General Store', 'Bole Ketelelema', '2025-06-30', 'Expired', 3500.00),
