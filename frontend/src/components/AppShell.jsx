@@ -3,6 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
 
+// comment
 function AppShell({ children }) {
   const { user, logout, isAdmin } = useAuth();
   const { lang, setLang, t, systemNameShort } = useLanguage();
