@@ -7,7 +7,7 @@ const DEMO_ACCOUNTS = [
   { role: 'inspector', username: 'inspector', password: 'inspector123' },
   { role: 'admin', username: 'admin', password: 'admin123' },
 ];
-// comments
+
 const showDemo = import.meta.env.VITE_SHOW_DEMO !== 'false';
 
 function FeatureIcon({ type }) {
