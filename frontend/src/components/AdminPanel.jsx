@@ -15,6 +15,7 @@ const emptyForm = {
   payment_status: 'Paid',
   balance_due: 0,
 };
+// comments
 
 function AdminPanel() {
   const { t } = useLanguage();
