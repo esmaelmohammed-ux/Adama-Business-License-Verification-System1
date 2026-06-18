@@ -12,7 +12,7 @@ function formatBalance(amount) {
     minimumFractionDigits: 2,
   }).format(amount);
 }
-// comment
+
 function formatDate(dateString, lang) {
   const locale = lang === 'am' ? 'am-ET' : lang === 'om' ? 'om-ET' : 'en-GB';
   return new Date(dateString).toLocaleDateString(locale, {
