@@ -7,7 +7,7 @@ function AppShell({ children }) {
   const { lang, setLang, t, systemNameShort } = useLanguage();
   const location = useLocation();
   const isLogin = location.pathname === '/login';
-//comment
+
   if (isLogin) {
     return children;
   }
@@ -50,4 +50,5 @@ function AppShell({ children }) {
 }
 
 export default AppShell;
+
 
