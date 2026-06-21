@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { fetchBusiness } from '../api/businessApi';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
-// comment
+// comme
 const showDemo = import.meta.env.VITE_SHOW_DEMO !== 'false';
 
 function formatBalance(amount) {
