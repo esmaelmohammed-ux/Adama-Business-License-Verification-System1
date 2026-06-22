@@ -16,7 +16,7 @@ const emptyForm = {
   balance_due: 0,
 };
 
-// comme
+// commen
 
 function AdminPanel() {
   const { t } = useLanguage();
