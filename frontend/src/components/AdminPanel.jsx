@@ -16,6 +16,8 @@ const emptyForm = {
   balance_due: 0,
 };
 
+// comm
+
 function AdminPanel() {
   const { t } = useLanguage();
   const [businesses, setBusinesses] = useState([]);
