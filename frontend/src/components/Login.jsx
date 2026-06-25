@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
+import CityLogo from './CityLogo';
 const DEMO_ACCOUNTS = [
   { role: 'inspector', username: 'inspector', password: 'inspector123' },
   { role: 'admin', username: 'admin', password: 'admin123' },
@@ -100,10 +101,7 @@ function Login() {
         <aside className="guest-brand-panel">
           <header className="guest-hero">
             <div className="hero-badge guest-hero-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-                <path d="M12 3l8 4v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z" strokeLinejoin="round" />
-                <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+              <CityLogo />
             </div>
             <p className="app-eyebrow guest-eyebrow">{t('appEyebrow')}</p>
             <h1 className="guest-system-name">{systemName}</h1>

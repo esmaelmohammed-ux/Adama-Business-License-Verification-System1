@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { fetchBusiness } from '../api/businessApi';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
+import CityLogo from './CityLogo';
 // comment 
 const showDemo = import.meta.env.VITE_SHOW_DEMO !== 'false';
 
@@ -181,10 +182,7 @@ function LicenseLookup() {
     <div className="inspector-dashboard">
       <div className="inspector-hero">
         <div className="hero-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-            <path d="M3 21h18M5 21V7l7-4 7 4v14" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M9 21v-6h6v6" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          <CityLogo />
         </div>
         <p className="app-eyebrow hero-eyebrow">{t('appEyebrow')}</p>
         <h1 className="hero-title">{systemName}</h1>
