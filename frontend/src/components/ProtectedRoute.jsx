@@ -2,7 +2,7 @@ import { Navigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 function ProtectedRoute({ children, adminOnly = false }) {
   const { user, loading } = useAuth();
-  // comments
+  // comm
   if (loading) {
     return <div className="loading-screen">…</div>;
   }
