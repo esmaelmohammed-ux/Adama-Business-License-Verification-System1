@@ -3,7 +3,7 @@ import { fetchBusiness } from '../api/businessApi';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import CityLogo from './CityLogo';
-// comm
+// comments
 const showDemo = import.meta.env.VITE_SHOW_DEMO !== 'false';
 
 function formatBalance(amount) {
