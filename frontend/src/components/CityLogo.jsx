@@ -12,4 +12,3 @@ function CityLogo() {
 
 export default CityLogo;
 
-
