@@ -1,6 +1,6 @@
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
-// comments
+// comment
 function ThemeToggle({ className = '' }) {
   const { isDark, toggleTheme } = useTheme();
   const { t } = useLanguage();
