@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png';
-// comment
+// commen
 function CityLogo() {
   return (
     <img
